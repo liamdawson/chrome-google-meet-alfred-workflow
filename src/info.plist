@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.ldaws.chrome-google-meet-alfred-workflow</string>
+	<key>category</key>
+	<string>Internet</string>
+	<key>connections</key>
+	<dict>
+		<key>041556F4-A2AE-413B-9345-D31BF5DEA847</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>85C5B30F-8FB6-40C5-B7CF-F3D305804CF2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>264A09D9-DE34-403A-9524-C67F6525811D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7464018D-1BE5-43D2-AFB3-CA90BC19B9AC</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Open a new Google Meet instance</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>041556F4-A2AE-413B-9345-D31BF5DEA847</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>321D439D-DBA8-4D5F-9F6C-B83122198E93</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7464018D-1BE5-43D2-AFB3-CA90BC19B9AC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3345C41C-D338-423C-B96B-BF4E91DF73FA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>041556F4-A2AE-413B-9345-D31BF5DEA847</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7464018D-1BE5-43D2-AFB3-CA90BC19B9AC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>041556F4-A2AE-413B-9345-D31BF5DEA847</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>85C5B30F-8FB6-40C5-B7CF-F3D305804CF2</key>
+		<array/>
+	</dict>
+	<key>createdby</key>
+	<string>Liam Dawson</string>
+	<key>description</key>
+	<string>Open the first (or a new) Google Meet tab in Chrome</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Chrome Google Meet</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>321D439D-DBA8-4D5F-9F6C-B83122198E93</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>1</string>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>7464018D-1BE5-43D2-AFB3-CA90BC19B9AC</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>meet</string>
+				<key>subtext</key>
+				<string>Find a Google Meet instance</string>
+				<key>text</key>
+				<string>Google Meet</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>264A09D9-DE34-403A-9524-C67F6525811D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string># adapted from https://dance.computer.dance/posts/2019/07/finding-open-web-pages-with-alfred.html
+# https://web.archive.org/web/20200617014510/https://dance.computer.dance/posts/2019/07/finding-open-web-pages-with-alfred.html
+
+on run argv
+  set windowIndex to 1
+  set service_url to (system attribute "SERVICE_URL")
+
+  if (count of argv) &gt; 0 then
+    set force_new to item 1 of argv
+  else
+    set force_new to "0"
+  end
+
+  tell application "Google Chrome"
+    if force_new is not "1"
+      repeat with theWindow in windows
+          set tabIndex to 1
+          repeat with theTab in tabs of theWindow
+              if service_url is in url of theTab then
+                  activate
+                  tell window windowIndex
+                      set active tab index to tabIndex
+                      set index to 1
+                  end tell
+                  tell application "System Events" to tell process "Google Chrome"
+                      perform action "AXRaise" of window 1
+                  end tell
+                  return
+              end
+              set tabIndex to tabIndex + 1
+          end repeat
+          set windowIndex to windowIndex + 1
+      end repeat
+    end
+
+      open location service_url
+      activate
+  end tell
+end run</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>85C5B30F-8FB6-40C5-B7CF-F3D305804CF2</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>variables</key>
+				<dict>
+					<key>SERVICE_URL</key>
+					<string>{var:service_url}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>041556F4-A2AE-413B-9345-D31BF5DEA847</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>3345C41C-D338-423C-B96B-BF4E91DF73FA</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>A remastered version of https://dance.computer.dance/posts/2019/07/finding-open-web-pages-with-alfred.html, which specifically opens/finds Google Meet in Google Chrome.
+
+By default,
+
+meet&lt;enter&gt; finds the first (or opens a new) tab with a Google Meet URL
+meet&lt;cmd&gt;&lt;enter&gt; opens a new tab with the Google Meet URL
+
+(Archive link to blog post: https://web.archive.org/web/20200617014510/https://dance.computer.dance/posts/2019/07/finding-open-web-pages-with-alfred.html)</string>
+	<key>uidata</key>
+	<dict>
+		<key>041556F4-A2AE-413B-9345-D31BF5DEA847</key>
+		<dict>
+			<key>note</key>
+			<string>Inject service_url</string>
+			<key>xpos</key>
+			<integer>350</integer>
+			<key>ypos</key>
+			<integer>175</integer>
+		</dict>
+		<key>264A09D9-DE34-403A-9524-C67F6525811D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>145</integer>
+		</dict>
+		<key>321D439D-DBA8-4D5F-9F6C-B83122198E93</key>
+		<dict>
+			<key>note</key>
+			<string>New tab</string>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>15</integer>
+		</dict>
+		<key>3345C41C-D338-423C-B96B-BF4E91DF73FA</key>
+		<dict>
+			<key>note</key>
+			<string>Find or create tab</string>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>260</integer>
+		</dict>
+		<key>7464018D-1BE5-43D2-AFB3-CA90BC19B9AC</key>
+		<dict>
+			<key>note</key>
+			<string>Force new instance</string>
+			<key>xpos</key>
+			<integer>240</integer>
+			<key>ypos</key>
+			<integer>45</integer>
+		</dict>
+		<key>85C5B30F-8FB6-40C5-B7CF-F3D305804CF2</key>
+		<dict>
+			<key>note</key>
+			<string>Find or create tab</string>
+			<key>xpos</key>
+			<integer>430</integer>
+			<key>ypos</key>
+			<integer>145</integer>
+		</dict>
+	</dict>
+	<key>variables</key>
+	<dict>
+		<key>service_url</key>
+		<string>https://meet.google.com/</string>
+	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.0.0</string>
+	<key>webaddress</key>
+	<string>https://github.com/liamdawson/chrome-google-meet-alfred-workflow</string>
+</dict>
+</plist>
